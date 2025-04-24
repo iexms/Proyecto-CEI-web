@@ -1,0 +1,257 @@
+{
+    "posts": [
+      {
+        "title": "Los secretos del buen café: cómo hacerlo como un barista",
+        "category": "Consejos y Técnicas",
+        "publish_date": "2025-04-25",
+        "reading_time": "5 min de lectura",
+        "description": "Conoce los secretos que los baristas utilizan para preparar una taza de café perfecta, desde la molienda hasta la temperatura del agua. ¡Prepara café como un profesional en casa!",
+        "content_url": "/posts/blog-post-cafe.html",
+        "image_url":"/assets/cafe.webp"
+      },
+      {
+        "title": "Comida rápida y saludable: recetas fáciles para tu día a día",
+        "category": "Recetas",
+        "publish_date": "2025-04-27",
+        "reading_time": "6 min de lectura",
+        "description": "Comer rápido no tiene que significar comer mal. Aquí tienes recetas fáciles, rápidas y saludables para esos días ajetreados, pero sin sacrificar el sabor ni la nutrición.",
+        "content_url": "/posts/blog-post-saludable.html",
+        "image_url":"/assets/comida-rapida-saludable.webp"
+      },
+      {
+        "title": "Ceviche por todo el mundo: variaciones del clásico latinoamericano",
+        "category": "Recetas",
+        "publish_date": "2025-04-30",
+        "reading_time": "8 min de lectura",
+        "description": "Descubre las variaciones internacionales del ceviche, un plato lleno de frescura y sabor, adaptado de diferentes maneras según el país. ¡Ideal para refrescar tu paladar!",
+        "content_url": "/posts/blog-post-ceviche.html",
+        "image_url":"/assets/ceviche.webp"
+      },
+      {
+        "title": "Los utensilios de cocina que realmente necesitas",
+        "category": "Consejos y Técnicas",
+        "publish_date": "2025-05-02",
+        "reading_time": "4 min de lectura",
+        "description": "No necesitas una cocina llena de utensilios caros para cocinar bien. Aquí te decimos qué herramientas realmente importan y cuáles puedes prescindir.",
+        "content_url": "/posts/bog-post-utensilios.html",
+        "image_url":"/assets/utensilios-cocina.webp"
+      },
+      {
+        "title": "De la granja a la mesa: el renacimiento de los productos locales",
+        "category": "Salud y Sostenibilidad",
+        "publish_date": "2025-05-04",
+        "reading_time": "7 minutos",
+        "description": "Apostar por productos locales no solo mejora la calidad de tus platos, sino que también apoya a la economía local y reduce el impacto ambiental. ¡Descubre cómo puedes unirte al movimiento!",
+        "content_url": "/posts/blog-post-local.html",
+        "image_url":"/assets/productos-locales.webp"
+      },
+      {
+        "title": "¿Qué es un maridaje perfecto? Cómo combinar vino y comida",
+        "category": "Tendencias y Cultura Gastronómica",
+        "publish_date": "2025-05-06",
+        "reading_time": "5 min de lectura",
+        "description": "Aprende lo básico sobre maridar vinos con diferentes comidas para elevar tus cenas. Aquí te damos los mejores consejos para lograr un maridaje perfecto.",
+        "content_url": "/posts/blog-post-maridaje.html",
+        "image_url":"/assets/maridaje.webp"
+      },
+      {
+        "title": "Postres sin azúcar: recetas deliciosas para todos",
+        "category": "Recetas",
+        "publish_date": "2025-05-09",
+        "reading_time": "6 min de lectura",
+        "description": "Disfruta de postres deliciosos y saludables sin necesidad de azúcar. Recetas fáciles de preparar y aptas para quienes buscan cuidar su salud sin renunciar a un buen dulce.",
+        "content_url": "/posts/blog-post-azucar.html",
+        "image_url":"/assets/postre-de-oreo.webp"
+      },
+      {
+        "title": "¿Comida fea pero deliciosa? 7 platos que no ganan en estética, pero sí en sabor",
+        "category": "Tendencias y Cultura Gastronómica",
+        "publish_date": "2025-05-11",
+        "reading_time": "7 min de lectura",
+        "description": "Algunos platos no son los más fotogénicos, pero sus sabores son todo un festín. Aquí te mostramos 7 de esos platos que te sorprenderán por su sabor, más allá de su apariencia.",
+        "content_url": "/posts/blog-post-fea.html",
+        "image_url":"/assets/menudo.webp"
+      },
+      {
+        "title": "El arte del sushi casero: trucos y recetas fáciles",
+        "category": "Recetas",
+        "publish_date": "2025-05-13",
+        "reading_time": "6 min de lectura",
+        "description": "¿Te gustaría hacer sushi en casa? Aquí te damos los mejores trucos y recetas fáciles para preparar sushi casero sin complicaciones. ¡Atrévete a probarlo!",
+        "content_url": "/posts/blog-post-sushi.html",
+        "image_url":"/assets/sushi.webp"
+      },
+      {
+        "title": "Cocina de aprovechamiento: recetas con sobras",
+        "category": "Salud y Sostenibilidad",
+        "publish_date": "2025-05-15",
+        "reading_time": "5 min de lectura",
+        "description": "No tires las sobras, ¡mejor reutilízalas! Te damos ideas sencillas para aprovechar lo que queda de otras comidas y hacer nuevas recetas deliciosas y sustentables.",
+        "content_url": "/posts/blog-post-aprovechamiento.html",
+        "image_url":"/assets/cocina-de-aprovechamiento.webp"
+      },
+      {
+        "title": "Fermentados: por qué deberías incluirlos en tu dieta",
+        "category": "Salud y Sostenibilidad",
+        "publish_date": "2025-05-18",
+        "reading_time": "8 min de lectura",
+        "description": "Los alimentos fermentados son excelentes para la salud digestiva. Descubre por qué debes incluirlos en tu dieta y aprende a prepararlos en casa.",
+        "content_url": "/posts/blog-post-fermentados.html",
+        "image_url":"/assets/fermentados.webp"
+      },
+      {
+        "title": "La historia de la pizza: de Italia al mundo",
+        "category": "Tendencias y Cultura Gastronómica",
+        "publish_date": "2025-05-20",
+        "reading_time": "7 min de lectura",
+        "description": "La pizza es un clásico global, pero pocos conocen su historia. En este post, te contamos cómo un plato humilde de Italia conquistó el mundo y se convirtió en el favorito de muchos.",
+        "content_url": "/posts/blog-post-pizza.html",
+        "image_url":"/assets/pizza.webp"
+      },
+      {
+        "title": "Cultura y comida: cómo los alimentos cuentan historias",
+        "category": "Tendencias y Cultura Gastronómica",
+        "publish_date": "2025-05-23",
+        "reading_time": "6 min de lectura",
+        "description": "La comida va más allá del sabor. Cada plato tiene una historia cultural que contar. En este post, exploramos cómo la gastronomía refleja la historia, las tradiciones y las costumbres de diferentes lugares.",
+        "content_url": "/posts/blog-post-cultura.html",
+        "image_url":"/assets/pan-muerto.webp"
+      },
+      {
+        "title": "Restaurante El Gourmet de la Abuela: un rincón de sabores tradicionales",
+        "category": "Reseñas de Restaurantes",
+        "publish_date": "2025-05-25",
+        "reading_time": "6 min de lectura",
+        "description": "Hoy te traemos una reseña del restaurante El Gourmet de la Abuela, un lugar encantador donde las recetas tradicionales cobran vida. Si eres amante de la comida casera con un toque gourmet, este restaurante es para ti.",
+        "content_url": "/posts/blog-post-puchero.html",
+        "image_url":"/assets/puchero.webp"
+      },
+      {
+        "title": "La Cocina del Mar: Reseña de un restaurante especializado en mariscos",
+        "category": "Reseñas de Restaurantes",
+        "publish_date": "2025-05-28",
+        "reading_time": "7 min de lectura",
+        "description": "Si eres un fanático de los mariscos, La Cocina del Mar te sorprenderá. En esta reseña, te contamos nuestra experiencia en este restaurante costero, desde su ambiente hasta los platos estrella que debes probar.",
+        "content_url": "/posts/blog-post-marisco.html",
+        "image_url":"/assets/marisco.webp"
+      },
+      {
+        "title": "Sushi Oishii: una experiencia auténtica japonesa",
+        "category": "Reseñas de Restaurantes",
+        "publish_date": "2025-06-01",
+        "reading_time": "6 min de lectura",
+        "description": "¿Te gustaría vivir una experiencia auténtica japonesa sin salir de la ciudad? En Sushi Oishii encontrarás la verdadera esencia del sushi, acompañado de un ambiente relajante y un servicio impecable.",
+        "content_url": "/posts/blog-post-sushirest.html",
+        "image_url":"/assets/sushi-restaurante.webp"
+      },
+      {
+        "title": "Restaurante Vegano Zen: más que comida, una filosofía",
+        "category": "Reseñas de Restaurantes",
+        "publish_date": "2025-06-03",
+        "reading_time": "5 min de lectura",
+        "description": "En Restaurante Vegano Zen no solo se trata de una comida deliciosa, sino también de una filosofía de vida saludable y responsable. Te compartimos nuestra experiencia en este innovador restaurante que promueve el veganismo y el bienestar.",
+        "content_url": "/posts/blog-post-vegano.html",
+        "image_url":"/assets/vegano.webp"
+      },
+      {
+        "title": "Churros Celestiales: La receta secreta para acompañar con chocolate",
+        "category": "Recetas",
+        "publish_date": "2025-05-01",
+        "reading_time": "10 min de lectura",
+        "description": "Descubre cómo preparar churros crujientes y dorados, acompañados de un delicioso chocolate caliente. El postre perfecto para cualquier ocasión.",
+        "content_url": "/posts/blog-post-churros.html",
+        "image_url":"/assets/churros-con-salsa-de-chocolate.webp"
+      },
+      {
+        "title": "Gazpacho Refrescante: El sabor de la tradición andaluza",
+        "category": "Recetas",
+        "publish_date": "2025-05-05",
+        "reading_time": "8 min de lectura",
+        "description": "Prepara un gazpacho andaluz fresco y sabroso con esta receta fácil. Ideal para los días calurosos de verano, lleno de vitaminas y frescura.",
+        "content_url": "/posts/blog-post-gazpacho.html",
+        "image_url":"/assets/gazpacho.webp"
+      },
+      {
+        "title": "Crema de Calabaza: Un abrazo cálido para tu paladar",
+        "category": "Recetas",
+        "publish_date": "2025-05-10",
+        "reading_time": "7 min de lectura",
+        "description": "La mejor crema de calabaza, suave y reconfortante, perfecta para una comida ligera pero deliciosa. ¡Sigue esta receta y disfruta de su sabor cremoso!",
+        "content_url": "/posts/blog-post-calabaza.html",
+        "image_url":"/assets/crema-de-calabaza.webp"
+      },
+      {
+        "title": "Fresas con Nata: El postre de siempre, reinventado",
+        "category": "Recetas",
+        "publish_date": "2025-05-12",
+        "reading_time": "6 min de lectura",
+        "description": "Dale un giro a las fresas con nata con esta receta. Un postre ligero y delicioso que nunca pasa de moda. ¡Hazlo en minutos y disfruta!",
+        "content_url": "/posts/blog-post-fresas.html",
+        "image_url":"/assets/fresas.webp"
+      },
+      {
+        "title": "Xiong He Jia: Un pedazo de Taiwán en tu mesa",
+        "category": "Reseñas de Restaurantes",
+        "publish_date": "2025-05-15",
+        "reading_time": "5 min de lectura",
+        "description": "Te llevamos a Xiong He Jia, un restaurante que trae el auténtico sabor de Taiwán a tu paladar. Descubre lo que lo convierte en un lugar único.",
+        "content_url": "/posts/blog-post-restaurante.html",
+        "image_url":"/assets/restaurante.webp"
+      },
+      {
+        "title": "Baos de Cerdo con Sriracha: Una explosión de sabores asiáticos",
+        "category": "Recetas",
+        "publish_date": "2025-05-20",
+        "reading_time": "9 min de lectura",
+        "description": "Haz tus propios baos de cerdo con salsa sriracha, una mezcla irresistible de dulzura, picante y suavidad en cada bocado. ¡Anímate a preparar esta receta fácil y deliciosa!",
+        "content_url": "/posts/blog-post-comida.html",
+        "image_url":"/assets/comida.webp"
+      },
+      {
+        "title": "La Magia de la Gastronomía Española: Sabores que conquistan corazones",
+        "category": "Tendencias y Cultura Gastronómica",
+        "publish_date": "2025-05-25",
+        "reading_time": "12 min de lectura",
+        "description": "Viaja a través de los sabores y tradiciones de la gastronomía española. Conoce los platos más emblemáticos y el arte de la cocina que fascina al mundo.",
+        "content_url": "/posts/blog-post-espanola.html",
+        "image_url":"/assets/espanola.webp"
+      },
+      {
+        "title": "Italia en tu mesa: Un recorrido por sus sabores más emblemáticos",
+        "category": "Tendencias y Cultura Gastronómica",
+        "publish_date": "2025-05-30",
+        "reading_time": "10 min de lectura",
+        "description": "Embárcate en un viaje gastronómico por Italia, donde cada región tiene su propia receta especial. Conoce la esencia de la comida italiana.",
+        "content_url": "/posts/blog-post-italiana.html",
+        "image_url":"/assets/italiana.webp"
+      },
+      {
+        "title": "El Arte de la Cocina Japonesa: Tradición y modernidad en cada plato",
+        "category": "Tendencias y Cultura Gastronómica",
+        "publish_date": "2025-06-01",
+        "reading_time": "11 min de lectura",
+        "description": "Explora la cocina japonesa, una fusión perfecta de simplicidad, técnica y sabores intensos. Aprende sobre los platos que definen la cultura culinaria de Japón.",
+        "content_url": "/posts/blog-post-japonesa.html",
+        "image_url":"/assets/japonesa.webp"
+      },
+      {
+        "title": "Tostada Integral con Aguacate y Huevo Poché: El desayuno que necesitas",
+        "category": "Recetas",
+        "publish_date": "2025-06-05",
+        "reading_time": "7 min de lectura",
+        "description": "Comienza el día con una tostada integral cubierta de aguacate cremoso y un huevo poché perfecto. Una opción saludable y deliciosa para tu desayuno.",
+        "content_url": "/posts/blog-post-desayuno.html",
+        "image_url":"/assets/desayuno.webp"
+      },
+      {
+        "title": "Ensalada de Quinoa con Pollo y Verduras: Frescura en cada bocado",
+        "category": "Recetas",
+        "publish_date": "2025-06-10",
+        "reading_time": "8 min de lectura",
+        "description": "Disfruta de una ensalada fresca y nutritiva de quinoa con pollo y verduras. Ideal para una comida ligera pero llena de proteínas y sabor.",
+        "content_url": "/posts/blog-post-cena.html",
+        "image_url":"/assets/cena.webp"
+      }
+    ]
+  }
+  
