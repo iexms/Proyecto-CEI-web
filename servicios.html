@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Servicios </title>
+    <meta name="description"
+        content="Descubre los servicios de Sabor y Contexto: asesorías culinarias, talleres personalizados y estrategias de comunicación gastronómica.">
+    <!-- Descripción para SEO, aparece en resultados de búsqueda -->
+    <link rel="preload" href="assets/logo.webp" as="image">
+    <!-- Optimización de carga: se indica que se debe precargar la imagen del logo -->
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/reset-otros.css">
+    <!-- Enlaces a las hojas de estilo: estilos específicos de esta página y reset global -->
+    <script src="js/header-component.js" defer></script>
+    <script src="js/footer-component.js" defer></script>
+    <script src="js/servicios.js" defer></script>
+     <!-- Scripts para componentes personalizados del encabezado y pie de página, diferidos para optimizar carga -->
+</head>
+
+<body>
+    <!-- Componente personalizado que representa el encabezado del sitio -->
+    <header-component></header-component>
+
+    <main>
+        <!-- =============================
+         SECCIÓN 1: TÍTULO PRINCIPAL
+         Encabezado con efecto dinámico de escritura
+         ============================= -->
+        <section class="titulo">
+            <h2> Servicios </h2>
+            <!-- Elemento animado con texto dinámico (efecto typing JS) -->
+            <div><span class="titulo__typing"></span></div>
+        </section>
+
+        <!-- =============================
+         SECCIÓN 2: SERVICIOS OFRECIDOS
+         Descripción visual y textual de cada servicio
+         ============================= -->
+        <section class="servicios">
+            <!-- Servicio 1: Diseño de menús -->
+            <div class="servicios__card">
+                <picture class="servicios__img">
+                    <img src="assets/menu-plan.webp" alt="Diseño de menús semanales y recetas personalizadas.">
+                </picture>
+                <h3> Diseño de menús semanales y recetas personalizadas. </h3>
+                <p> Creación de menús equilibrados y variados para toda la semana, adaptados a tus preferencias y
+                    necesidades dietéticas.</p>
+            </div>
+
+            <!-- Servicio 2: Clases de cocina -->
+            <div class="servicios__card">
+                <picture class="servicios__img">
+                    <img src="assets/clases-cocina.webp" alt="Clases y talleres de cocina">
+                </picture>
+                <h3> Clases y talleres de cocina. </h3>
+                <p> Clases y talleres de cocina para todos los niveles, donde aprenderás técnicas, recetas y trucos
+                    de
+                    forma práctica y divertida.</p>
+            </div>
+
+            <!-- Servicio 3: Asesoramiento en alimentación -->
+            <div class="servicios__card">
+                <picture class="servicios__img">
+                    <img src="assets/asesoramiento.webp" alt="Asesoramientos.">
+                </picture>
+                <h3> Asesoramientos. </h3>
+                <p> Asesoramiento en alimentación para mejorar tus hábitos diarios, tomar decisiones más saludables,
+                    planificar tus compras y disfrutar de una alimentación equilibrada, deliciosa y sin
+                    complicaciones.
+                </p>
+            </div>
+        </section>
+
+        <!-- =============================
+         SECCIÓN 3: LLAMADO A LA ACCIÓN
+         Invitación a contactar para contratar servicios
+         ============================= -->
+        <section class="llamada">
+            <h3> ¿Estás interesado? </h3>
+            <a href="contacto.html" title="Contáctame"> Contáctame </a>
+        </section>
+
+        <!-- =============================
+         SECCIÓN 4: RAZONES PARA ELEGIRME
+         Argumentos de valor que respaldan los servicios
+         ============================= -->
+        <section class="razones">
+            <h3> ¿Por qué elegir mis servicios? </h3>
+            <div class="razones__container">
+                <!-- Razón 1: Personalización -->
+                <div class="razones__cards">
+                    <h4> Personalización </h4>
+                    <div> Cada servicio esta adaptado a tus necesidades y preferencias.
+                    </div>
+                </div>
+                <!-- Razón 2: Comodidad -->
+                <div class="razones__cards">
+                    <h4> Comodidad </h4>
+                    <div> Soluciones prácticas que te ahorran tiempo y esfuerzo en la
+                        cocina. </div>
+                </div>
+                <!-- Razón 3: Calidad -->
+                <div class="razones__cards">
+                    <h4> Calidad </h4>
+                    <div> Uso ingredientes frescos, de temporada, y comparto lo que sé
+                        para
+                        que aprendas. </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================
+         SECCIÓN 5: TESTIMONIOS
+         Carrusel de experiencias reales de clientes satisfechos
+         ============================= -->
+        <div class="testimonios">
+            <!-- Flecha para navegar al testimonio anterior -->
+            <span class="testimonios__arrow testimonios__arrow--prev">&lsaquo;</span>
+           <!-- Contenedor de los testimonios -->
+            <div class="testimonios__container">
+                <!-- Testimonio 1 -->
+                <div class="testimonios__item">
+                    <p>"Gracias a las clases de cocina, he aprendido a preparar platos deliciosos y saludables que se
+                        adaptan a mi estilo de vida. Ahora disfruto más tiempo con mi familia y he mejorado mi confianza
+                        en la cocina." – Marta G.</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="testimonios__item">
+                    <p>"Las recomendaciones fueron súper claras y prácticas. Pude hacer pequeños cambios que marcaron
+                        una gran diferencia en mi rutina diaria." – Diego R.</p>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="testimonios__item">
+                    <p>"Nunca pensé que cocinar podía ser tan simple y divertido. Las clases me devolvieron la
+                        motivación y ahora me animo a probar recetas nuevas cada semana." – Andrea M.</p>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="testimonios__item">
+                    <p>"Gracias al acompañamiento, aprendí a organizar mejor mis compras y a aprovechar lo que tengo en
+                        casa. ¡Mucho menos desperdicio y más creatividad!" – Julián T.</p>
+                </div>
+
+                <!-- Testimonio 5 -->
+                <div class="testimonios__item">
+                    <p>"No solo aprendí técnicas nuevas, sino que también gané seguridad en la cocina. Las clases fueron
+                        claras, cercanas y muy motivadoras." – Carla S.</p>
+                </div>
+            </div>
+            <!-- Flecha para navegar al siguiente testimonio -->
+            <span class="testimonios__arrow testimonios__arrow--next">&rsaquo;</span>
+
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+</body>
