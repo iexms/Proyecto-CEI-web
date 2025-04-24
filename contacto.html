@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto </title>
+    <meta name="description"
+        content="¿Tienes preguntas o propuestas? Ponte en contacto con nosotros en Sabor y Contexto. ¡Estamos aquí para ayudarte!">
+    <!-- Descripción para SEO, aparece en resultados de búsqueda -->
+    <link rel="preload" href="assets/logo.webp" as="image">
+    <!-- Optimización de carga: se indica que se debe precargar la imagen del logo -->
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/reset-otros.css">
+    <!-- Enlaces a las hojas de estilo: estilos específicos de esta página y reset global -->
+    <script src="js/header-component.js" defer></script>
+    <script src="js/footer-component.js" defer></script>
+    <!-- Scripts para componentes personalizados del encabezado y pie de página, diferidos para optimizar carga -->
+</head>
+
+<body>
+     <!-- Componente personalizado que representa el encabezado del sitio -->
+    <header-component></header-component>
+
+    <main>
+        <!-- =============================
+             SECCIÓN 1: SUSCRIPCIÓN
+             Beneficios y formulario para captar suscriptores
+             ============================= -->
+        <section class="suscribir">
+            <!-- Contenedor de encabezado de la sección -->
+            <div class="suscribir__container">
+                <h2> ¡Suscríbete! </h2>
+                <h3> Y gana algunas ventajas...</h3>
+            </div>
+            <!-- Tarjetas informativas sobre los beneficios de suscribirse -->
+            <div class="suscribir__cards">
+                <!-- Ventaja 1: Notificaciones -->
+                <div class="suscribir__card">
+                    <h4> Notificaciones </h4>
+                    <p> No te pierdas ninguna actualización. Recibe notificaciones sobre nuevas publicaciones. </p>
+                </div>
+                <!-- Ventaja 2: Contenido exclusivo -->
+                <div class="suscribir__card">
+                    <h4> Contenido exclusivo </h4>
+                    <p> Accede a posts y recomendaciones que solo los suscriptores reciben. </p>
+                </div>
+                <!-- Ventaja 3: Descuentos -->
+                <div class="suscribir__card">
+                    <h4> Descuentos </h4>
+                    <p> Obten descuentos exclusivos para suscriptores en todos los servicios. </p>
+                </div>
+            </div>
+            <!-- Formulario para capturar correo del usuario -->
+            <div class="suscribir__mail">
+                <form class="suscribir__form" action="/enviar" method="post">
+                    <input type="email" id="mail" placeholder="Introduce tu email" required>
+                    <!-- Campo obligatorio para capturar el email -->
+                    <input type="submit" value="Suscribirse">
+                    <!-- Botón de envío del formulario -->
+                </form>
+            </div>
+        </section>
+
+        <!-- =============================
+             SECCIÓN 2: CONTACTO
+             Formulario para que el usuario se comunique directamente
+             ============================= -->
+        <section class="contacto">
+            <!-- Texto introductorio con invitación al contacto -->
+            <div class="contacto__info">
+                <h2> ¡Contáctame! </h2>
+                <p> Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, ¡me encantaría saber de ti!
+                    Puedes completar el formulario a continuación o elegir cualquiera de mis redes sociales para ponerte
+                    en contacto conmigo. Te contestaré lo mas pronto posible.
+                    ¡Estoy aquí para ayudarte!
+                </p>
+            </div>
+            <!-- Formulario con campos para enviar un mensaje personalizado -->
+            <div class="contacto__mail">
+                <form class="contacto__form" action="/enviar" method="post">
+                    <div class="contacto__datos">
+                        <!-- Campos de datos personales del remitente -->
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                        <input type="tel" id="telefono" placeholder="Teléfono" required>
+                        <input type="email" id="correo" placeholder="Correo electrónico" required>
+                    </div>
+
+                    <!-- Campo adicional para especificar el asunto del mensaje -->
+                    <input type="text" id="asunto" placeholder="Asunto">
+
+                    <!-- Área de texto para el cuerpo del mensaje -->
+                    <textarea id="mensage" placeholder="Mensaje..."></textarea>
+
+                    <!-- Botón para enviar el formulario -->
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Componente personalizado para el pie de página. -->
+    <footer-component></footer-component>
+</body>

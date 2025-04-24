@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sabor y Contexto </title>
+    <meta name="description"
+        content="Bienvenido a Sabor y Contexto: tu espacio de inspiración gastronómica, cultural y sostenible. Explora todo lo que tenemos para ti.">
+    <!-- Descripción para SEO, aparece en resultados de búsqueda -->
+        <link rel="preload" href="assets/logo.webp" as="image">
+        <!-- Optimización de carga: se indica que se debe precargar la imagen del logo -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/reset-otros.css">
+    <!-- Enlaces a las hojas de estilo: estilos específicos de esta página y reset global -->
+    <script src="js/header-component.js" defer></script>
+    <script src="js/footer-component.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/popup.js" defer></script>
+    <!-- Scripts para componentes personalizados del encabezado y pie de página, diferidos para optimizar carga -->
+</head>
+
+<body>
+    <!-- Componente personalizado que representa el encabezado del sitio -->
+    <header-component></header-component>
+
+     <!-- POPUP GLOBAL
+         Se utiliza para mostrar contenido emergente cargado dinámicamente.
+         Se encuentra inicialmente oculto hasta que el usuario lo activa mediante interacción. -->
+    <div class="popup__overlay"></div>
+    <div class="popup">
+                <!-- Botón para cerrar el popup. -->
+        <button class="popup__menu-bttn" title="Cerrar pop-up">
+            <span></span>
+            <span></span>
+        </button>
+         <!-- Contenedor del contenido dinámico que se cargará desde otro archivo HTML -->
+        <div class="popup__content">
+            <!-- Aquí se cargará el contenido -->
+        </div>
+    </div>
+    
+    <main>
+        <!-- CONTENIDO PRINCIPAL DEL SITIO -->
+
+        <!-- ======================================
+             SECCIÓN 1: TÍTULO PRINCIPAL
+             Introducción visual con mensaje central y llamados a la acción
+             ====================================== -->
+        <section class="titulo">
+            <!-- Contenedor del mensaje principal -->
+            <div class="titulo__heading">
+                <h2 class="titulo__text"> Hablemos de comida. <br> Sin reglas, sin límites, solo disfrute.
+                </h2>
+            </div>
+            <!-- Botones de acción: explora el blog o suscribirse -->
+            <div class="titulo__actions">
+                <a class="titulo__bttn" href="blog.html" title="Explora el blog">Explora el blog</a>
+
+                <a class="titulo__bttn" href="contacto.html" title="Suscríbete"> Suscríbete </a>
+            </div>
+            <!-- Contenedor de partículas -->
+            <div class="titulo__particles"></div>
+        </section>
+
+        <!-- ======================================
+             SECCIÓN 2: PLATOS DE TEMPORADA
+             Carrusel con platos representativos de cada estación
+             ====================================== -->
+        <section class="platos">
+            <h3 class="platos__title"> Platos según la temporada </h3>
+
+             <!-- Carrusel de platos con navegación por botones -->
+            <div class="platos__container">
+
+                <!-- Botón para retroceder en el carrusel -->
+                <button class="platos__arrow platos__arrow--prev" title="Ir atras"> &lsaquo; </button>
+                
+                <!-- Lista de platos. Cada ítem contiene imagen y nombre -->
+                <div class="platos__list">
+                    <div class="platos__item">
+                        <picture class="platos__img">
+
+                            <img src="assets/churros-con-salsa-de-chocolate.webp" alt="Churros con chocolate"
+                                loading="lazy">
+
+                        </picture>
+                        <h4 class="platos__name"> Invierno: Churros con chocolate caliente</h4>
+                    </div>
+
+                    <div class="platos__item">
+                        <picture class="platos__img">
+
+                            <img src="assets/fresas.webp" alt="Fresas con nata" loading="lazy">
+
+                        </picture>
+                        <h4 class="platos__name"> Primavera: Fresas con nata </h4>
+                    </div>
+
+                    <div class="platos__item">
+                        <picture class="platos__img">
+
+                            <img src="assets/gazpacho.webp" alt="Gazpacho" loading="lazy">
+
+                        </picture>
+                        <h4 class="platos__name"> Verano: Gazpacho andalúz </h4>
+                    </div>
+
+                    <div class="platos__item">
+                        <picture class="platos__img">
+
+                            <img src="assets/crema-de-calabaza.webp" alt="Crema de calabaza" loading="lazy">
+
+                        </picture>
+                        <h4 class="platos__name"> Otoño: Crema de calabaza </h4>
+                    </div>
+                </div>
+
+                 <!-- Botón para avanzar en el carrusel -->
+                <button class="platos__arrow platos__arrow--next" title="Ir adelante"> &rsaquo; </button>
+            </div>
+        </section>
+
+        <!-- ======================================
+             SECCIÓN 3: GASTRONOMÍAS DESTACADAS
+             Lista visual con las tres cocinas más representativas
+             ====================================== -->
+        <section class="gastronomias">
+            <h3 class="gastronomias__title"> Top 3 gastronomías </h3>
+
+            <div class="gastronomias__list">
+                <div class="gastronomias__item">
+                    <picture class="gastronomias__img">
+
+                        <img src="assets/japonesa.webp" alt="Comida japonesa" loading="lazy">
+
+                    </picture>
+                    <h4 class="gastronomias__name"> Japonesa </h4>
+                </div>
+                <div class="gastronomias__item">
+                    <picture class="gastronomias__img">
+
+                        <img src="assets/espanola.webp" alt="Comida española" loading="lazy">
+
+                    </picture>
+                    <h4 class="gastronomias__name"> Española </h4>
+                </div>
+                <div class="gastronomias__item">
+                    <picture class="gastronomias__img">
+
+                        <img src="assets/italiana.webp" alt="Comida italiana" loading="lazy">
+
+                    </picture>
+                    <h4 class="gastronomias__name"> Italiana </h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================
+             SECCIÓN 4: ARTÍCULOS DESTACADOS
+             Incluye un menú del día y una recomendación de restaurante
+             ====================================== -->
+        <div class="articulos">
+             <!-- Menú del día con opciones de desayuno, comida y cena -->
+            <article class="articulos__item">
+                <h3 class="articulos__title"> Menú del día </h3>
+                <div class="articulos__container">
+                    <!-- Tarjeta para desayuno -->
+                    <div class="articulos__card">
+                        <img src="assets/desayuno.webp" alt="Tostada de huevo y aguacate" loading="lazy">
+                        <div class="articulos__content">
+                            <h4 class="articulos__subtitle"> Desayuno </h4>
+                            <div> Tostada integral con aguacate y huevo poché. </div>
+                            <button title="Ver receta"> Ver receta &rsaquo; </button>
+                        </div>
+                    </div>
+                    <!-- Tarjeta para comida -->
+                    <div class="articulos__card">
+                        <img src="assets/comida.webp" alt="Bao de cerdo" loading="lazy">
+                        <div class="articulos__content">
+                            <h4 class="articulos__subtitle"> Comida </h4>
+                            <div> Baos de cerdo con salsa siracha y mayonesa. </div>
+                            <button title="Ver receta"> Ver receta &rsaquo; </button>
+                        </div>
+                    </div>
+                    <!-- Tarjeta para cena -->
+                    <div class="articulos__card">
+                        <img src="assets/cena.webp" alt="Ensalada de quinoa y pollo" loading="lazy">
+                        <div class="articulos__content">
+                            <h4 class="articulos__subtitle"> Cena </h4>
+                            <div> Ensalada de quinoa con pollo y verduras. </div>
+                            <button title="Ver receta"> Ver receta &rsaquo; </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recomendación mensual de restaurante con descripción e imagen -->
+            <article class="articulos__item">
+                <h3 class="articulos__title"> Restaurante del mes </h3>
+                <div class="articulos__container">
+                    <h4> Xiong he jia - El sabor de Taiwán <br> Valencia </h4>
+                    <p>Te llevamos a Xiong He Jia, un restaurante que trae el auténtico sabor de Taiwán a tu paladar. Descubre lo que lo convierte en un lugar único.</p>
+                    <button title="Ver post"> Ver post &rsaquo; </button>
+                    <img src="assets/restaurante.webp" alt=" Plato del restaurante ">
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Componente personalizado para el pie de página. -->
+    <footer-component></footer-component>
+</body>

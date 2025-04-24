@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog </title>
+    <meta name="description"
+        content="Lee las últimas recetas, tendencias y consejos en el blog de Sabor y Contexto. ¡Explora, aprende y disfruta!">
+    <!-- Descripción para SEO, aparece en resultados de búsqueda -->
+    <link rel="preload" href="assets/logo.webp" as="image">
+    <!-- Optimización de carga: se indica que se debe precargar la imagen del logo -->
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <!-- Enlaces a las hojas de estilo: estilos específicos de esta página y reset global -->
+    <link rel="stylesheet" href="css/reset-otros.css">
+    <script src="js/header-component.js" defer></script>
+    <script src="js/footer-component.js" defer></script>
+    <script src="js/blog.js" defer></script>
+    <!-- Scripts para componentes personalizados del encabezado y pie de página, diferidos para optimizar carga -->
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <main>
+        <section class="categorias">
+            <h2 class="categorias__titulo">Todos los posts.</h2>
+
+            <!-- Filtro por categorías en fila -->
+            <ul class="categorias__filtro-lista">
+                <li class="categorias__filtro-item categorias__filtro-item--all">Todos los posts</li>
+                <li class="categorias__filtro-item categorias__filtro-item--recetas">Recetas</li>
+                <li class="categorias__filtro-item categorias__filtro-item--tendencias">Tendencias y Cultura</li>
+                <li class="categorias__filtro-item categorias__filtro-item--consejos">Consejos y Técnicas</li>
+                <li class="categorias__filtro-item categorias__filtro-item--salud">Salud y Sostenibilidad</li>
+                <li class="categorias__filtro-item categorias__filtro-item--reseñas">Reseñas</li>
+            </ul>
+
+            <label for="category-filter-select" class="sr-only">Filtrar posts por categoría</label>
+            <select class="categorias__filtro-select" id="category-filter-select">
+                <option class="categorias__filtro-item categorias__filtro-item--all" value="">Todos los posts</option>
+                <option class="categorias__filtro-item categorias__filtro-item--recetas" value="Recetas">Recetas
+                </option>
+                <option class="categorias__filtro-item categorias__filtro-item--tendencias"
+                    value="Tendencias y Cultura">Tendencias y Cultura</option>
+                <option class="categorias__filtro-item categorias__filtro-item--consejos" value="Consejos y Técnicas">
+                    Consejos y Técnicas</option>
+                <option class="categorias__filtro-item categorias__filtro-item--salud" value="Salud y Sostenibilidad">
+                    Salud y Sostenibilidad</option>
+                <option class="categorias__filtro-item categorias__filtro-item--reseñas"
+                    value="Reseñas de Restaurantes">Reseñas</option>
+            </select>
+        </section>
+
+        <!-- Lista de posts -->
+        <div class="post-list">
+            <!-- Los posts se cargarán aquí mediante JavaScript -->
+        </div>
+
+        <!-- Popup para mostrar contenido completo del post -->
+        <div class="popup__overlay"></div>
+        <div class="popup">
+            <button class="popup__menu-bttn">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="popup__content">
+                <!-- Aquí se cargará el contenido -->
+            </div>
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+</body>
