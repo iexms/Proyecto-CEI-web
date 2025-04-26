@@ -1,0 +1,98 @@
+/* ==========================================================================
+   PRIMERA SECCIÓN: POPUP Y SCROLLBAR
+   Estilos para ocultar el scrollbar y la configuración del popup.
+   ========================================================================== */
+
+   div::-webkit-scrollbar {
+    /* Ocultamos la barra de desplazamiento en todo el documento. */
+    display: none;
+}
+
+/* ==========================================================================
+   SEGUNDA SECCIÓN: FONDO DEL POPUP
+   Estilo para el fondo oscuro que aparece al abrir el popup.
+   ========================================================================== */
+
+.popup__overlay {
+    /* Fondo del popup que cubre toda la pantalla, con opacidad para crear el efecto de modal. */
+    display: none; /* Inicialmente oculto */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    z-index: 10; /* Asegura que el fondo esté por encima del contenido principal */
+}
+
+/* ==========================================================================
+   TERCERA SECCIÓN: CONTENEDOR PRINCIPAL DEL POPUP
+   Estilo para el contenedor donde se muestra el contenido del popup.
+   ========================================================================== */
+
+.popup {
+    /* Popup que se muestra de manera centrada con el contenido dentro. */
+    display: none; /* Se muestra cuando está activo */
+    position: fixed;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste de transformación para centrar de forma precisa */
+    width: 80%; /* Tamaño relativo del popup */
+    height: 90%; /* Tamaño relativo del popup */
+    background-color: var(--color-primary); /* Fondo principal del popup */
+    border: 1px solid var(--color-secondary); /* Borde con color secundario */
+    overflow: hidden; /* Ocultamos el scroll en el contenedor del popup */
+    z-index: 11; /* Asegura que el popup esté por encima del fondo */
+}
+
+/* ==========================================================================
+   CUARTA SECCIÓN: CONTENIDO SCROLLEABLE DEL POPUP
+   Estilo para el área del contenido dentro del popup que puede ser desplazado verticalmente.
+   ========================================================================== */
+
+.popup__content {
+    /* Contenido dentro del popup que puede desplazarse verticalmente si es necesario. */
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Permitimos desplazamiento vertical en el contenido */
+    padding: 3.7rem 1.25rem 1.25rem 1.25rem; /* Relleno adecuado para el contenido */
+}
+
+/* ==========================================================================
+   QUINTA SECCIÓN: BOTÓN DE CIERRE DEL POPUP
+   Estilo para el botón de cierre del popup, ubicado en la esquina superior derecha.
+   ========================================================================== */
+
+.popup__menu-bttn {
+    /* Botón de cierre del popup, estilo de posición fija en la esquina superior derecha. */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary); /* Fondo del botón con color primario */
+    border: 1px solid var(--color-secondary); /* Borde secundario */
+    z-index: 20; /* Asegura que el botón de cierre esté encima del popup */
+    cursor: pointer; /* Indicador de puntero al pasar por encima */
+    display: flex;
+    align-items: center; /* Alineación central del contenido */
+    justify-content: center; /* Alineación central del contenido */
+}
+
+.popup__menu-bttn span {
+    /* Estilo de las líneas del ícono de cruz para cerrar el popup */
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: var(--color-secondary); /* Color de las líneas del ícono */
+}
+
+.popup__menu-bttn span:first-child {
+    /* Línea superior que se rota para crear la cruz */
+    transform: rotate(45deg);
+}
+
+.popup__menu-bttn span:last-child {
+    /* Línea inferior que se rota para crear la cruz */
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,416 @@
+/* ==========================================================================
+   SECCIÓN 1: SOBRE MÍ
+   Componente visual principal de presentación personal.
+   Combina texto con una imagen representativa en un diseño de dos columnas.
+   ========================================================================== */
+
+/* Contenedor general de la sección. Usa flexbox para alinear horizontalmente
+   el texto a la izquierda y la imagen a la derecha. La posición relativa
+   permite que los elementos hijos se posicionen absolutamente dentro de él. */
+.sobre-mi {
+    width: 80%;
+    margin: 5rem auto 0 13rem;
+    /* margen superior amplio y margen izquierdo interno */
+    display: flex;
+    position: relative;
+}
+
+/* Contenido textual de la sección. Este bloque contiene el título, el texto 
+   descriptivo y el llamado a la acción. Está centrado verticalmente usando flexbox
+   y animado para aparecer desde la izquierda. */
+.sobre-mi__content {
+    width: 65%;
+    background-color: var(--color-brown);
+    /* fondo oscuro para contraste */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    padding: 5rem 15rem 5rem 5rem;
+    /* espaciado generoso en todos los lados excepto la derecha */
+    gap: 3rem;
+    /* separación entre elementos internos */
+    color: var(--color-primary);
+    /* color del texto principal */
+    position: relative;
+    z-index: 1;
+    /* asegura que el contenido se superponga correctamente */
+    animation: slideInLeft 2s ease-out forwards;
+    /* animación de entrada */
+}
+
+/* Título principal. Usa una tipografía decorativa para destacar el nombre
+   de la sección. Está centrado horizontalmente. */
+.sobre-mi__content h2 {
+    font-size: var(--font-tittle);
+    font-family: var(--text-decor);
+    text-align: center;
+}
+
+/* Línea decorativa animada que aparece debajo del título. Crea un efecto visual
+   elegante y profesional tras unos segundos. */
+.sobre-mi__content h2::after {
+    content: "";
+    display: block;
+    width: 0;
+    /* comienza invisible */
+    height: 2px;
+    background-color: var(--color-primary);
+    margin: 5px auto 0;
+    animation: crecerLinea 1s ease-out forwards;
+    animation-delay: 2s;
+}
+
+/* Párrafos dentro de la sección. Centrados y con interlineado generoso
+   para mejorar la legibilidad. */
+.sobre-mi__content p {
+    text-align: center;
+    font-size: var(--font-medium);
+    line-height: 1.6;
+}
+
+/* Contenedor del llamado a la acción. Se organiza en columna para contener
+   un texto introductorio y un botón. Todo está centrado para enfoque visual. */
+.sobre-mi__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: var(--font-medium);
+}
+
+/* Botón que dirige al formulario de contacto. Borde visible, efecto hover
+   que invierte colores para mejor interacción. */
+.sobre-mi__cta a {
+    margin-top: 1.5rem;
+    border: 2px solid var(--color-primary);
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    color: var(--color-primary);
+}
+
+.sobre-mi__cta a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-brown);
+    /* fondo y texto se invierten para claridad */
+}
+
+/* Contenedor de la imagen. Posicionado absolutamente para superponerse al layout.
+   La animación da una entrada suave desde la derecha. */
+.sobre-mi__img {
+    width: 35%;
+    min-height: 600px;
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    opacity: 0;
+    z-index: 1;
+    animation: slideInRight 2s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Imagen de perfil. Se adapta al tamaño del contenedor sin deformación
+   y usa una sombra sutil para destacarse del fondo. */
+.sobre-mi__img img {
+    width: 100%;
+    height: 600px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   SECCIÓN 2: SOBRE EL BLOG
+   Explica el propósito y enfoque del blog con un diseño destacado.
+   ========================================================================== */
+
+/* Sección con fondo claro, borde, y espaciado amplio.
+   Se utiliza para presentar la narrativa principal del blog. */
+.sobre-blog {
+    width: 80%;
+    margin: 10rem auto 0;
+    border: 1px solid var(--color-secondary);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1.5rem;
+}
+
+/* Título posicionado sobre el borde superior. 
+   Flota con fondo blanco para dar efecto de solapamiento. */
+.sobre-blog h2 {
+    font-family: var(--text-decor);
+    font-size: var(--font-subtittle);
+    position: absolute;
+    top: -20px;
+    left: 15%;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+    padding: 0 1.8rem;
+    z-index: 1;
+}
+
+/* ==========================================================================
+   SECCIÓN 3: LLAMADAS
+   Diseño en dos columnas con llamados a visitar servicios o el blog.
+   ========================================================================== */
+
+.llamadas {
+    width: 80%;
+    margin: 5rem auto 0;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Cada bloque representa una opción (servicios o blog) centrada.
+   Permite destacar acciones importantes con textos llamativos. */
+.llamadas__item {
+    width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 5rem 10rem;
+    position: relative;
+}
+
+.llamadas__item h3 {
+    font-size: var(--font-medium);
+}
+
+.llamadas__item a {
+    margin-top: 1.5rem;
+    border: 1px solid var(--color-secondary);
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.llamadas__item a:hover {
+    color: var(--color-primary);
+    background-color: var(--color-brown);
+    border-color: var(--color-brown);
+}
+
+/* Línea vertical decorativa que separa ambos bloques.
+   Se reemplaza por una línea horizontal en vista móvil. */
+.llamadas__separador {
+    width: 2px;
+    background-color: var(--color-brown);
+    margin: 0 2rem;
+}
+
+/* ==========================================================================
+   SECCIÓN 4: SUSCRIPCIÓN
+   Sección con formulario de captura de correos para comunidad.
+   ========================================================================== */
+
+.suscribirse {
+    margin: 5rem 0;
+    background-color: var(--color-brown);
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título en mayúsculas y espaciado generoso.
+   Refuerza visualmente la intención de acción. */
+.suscribirse h3 {
+    font-size: var(--font-large);
+    text-transform: uppercase;
+    color: var(--color-primary);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Contenedor del formulario. Flex horizontal que se adapta en móvil. */
+.suscribirse__form {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+/* Campo base */
+input {
+    border: 3px solid var(--color-primary);
+    padding: 1rem;
+}
+
+/* Campo de email con ancho fijo generoso para visibilidad. */
+.suscribirse__form input[type="email"] {
+    width: 50rem;
+}
+
+/* Texto del placeholder en color tenue para alinearlo con el diseño general. */
+::placeholder {
+    color: var(--color-primary);
+}
+
+/* Botón de envío con transición para estados hover. */
+.suscribirse__form input[type="submit"] {
+    width: 10rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    color: var(--color-primary);
+}
+
+.suscribirse__form input[type="submit"]:hover {
+    background-color: var(--color-primary);
+    color: var(--color-brown);
+}
+
+
+/* ==========================================================================
+   RESPONSIVE: ADAPTACIONES PARA DISPOSITIVOS PEQUEÑOS
+   ========================================================================== */
+
+/* Adaptación para pantallas medianas */
+@media (max-width: 1450px) {
+    .llamadas__item {
+        padding: 5rem 5rem;
+    }
+
+    .sobre-mi {
+        width: 95%;
+        margin: 5rem auto;
+    }
+}
+
+/* Reordenamiento y reflujo en pantallas pequeñas */
+@media (max-width: 1100px) {
+    .llamadas__item {
+        padding: 5rem 2rem;
+    }
+
+    .sobre-blog h2 {
+        left: 20%;
+    }
+
+    .sobre-mi {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sobre-mi__content {
+        width: 100%;
+        margin-left: 0;
+        padding: 3rem;
+    }
+
+    .sobre-mi__img {
+        position: static;
+        width: 100%;
+        min-height: 600px;
+        margin-top: 2rem;
+    }
+
+    .sobre-mi__img img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Optimización final para móviles */
+@media (max-width: 850px) {
+    .sobre-blog {
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid var(--color-secondary);
+        padding: 3rem 0;
+    }
+
+    .sobre-blog h2 {
+        left: 25%;
+    }
+
+    .llamadas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .llamadas__item {
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+
+    .llamadas__separador {
+        width: 80%;
+        height: 2px;
+        background-color: var(--color-brown);
+        margin: 2rem 0;
+    }
+
+    .suscribirse__form {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .suscribirse__form input[type="email"] {
+        width: 100%;
+    }
+
+    .suscribirse__form input[type="submit"] {
+        align-self: center;
+    }
+}
+
+@media (max-width: 440px) {
+    .sobre-mi__content {
+        padding: 2rem;
+    }
+    .sobre-mi__content h2 {
+        font-size: var(--font-subtittle);
+    }
+
+    .sobre-mi__content p {
+        font-size: var(--font-small);
+    }
+    
+    
+}
+
+/* ==========================================================================
+   ANIMACIONES: Transiciones de entrada y efectos decorativos
+   ========================================================================== */
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes crecerLinea {
+    from {
+        width: 0;
+        transform: scaleX(0);
+    }
+
+    to {
+        width: 50%;
+        transform: scaleX(1);
+    }
+}

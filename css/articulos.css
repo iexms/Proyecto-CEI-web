@@ -1,0 +1,235 @@
+/* =======================================
+   ESTILOS GENERALES DEL HEADER
+   ======================================= */
+header {
+  color: var(--color-brown);
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 50px;
+}
+
+header h2 {
+  font-size: var(--font-tittle);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: var(--font-medium);
+}
+
+/* =======================================
+     TIPOGRAFÍA GENERAL: TÍTULOS Y PÁRRAFOS
+     ======================================= */
+
+/* Títulos h3 y h4 */
+h3,
+h4 {
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: var(--font-subtittle);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: var(--font-large);
+  font-weight: bold;
+}
+
+/* Párrafos */
+p {
+  font-size: var(--font-medium);
+  margin-bottom: 20px;
+  text-align: justify;
+  color: var(--color-secondary);
+}
+
+/* =======================================
+     LISTAS
+     ======================================= */
+ul {
+  list-style: disc inside;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: var(--font-medium);
+}
+
+/* =======================================
+     ENLACES
+     ======================================= */
+a {
+  color: var(--color-brown);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-brown);
+}
+
+/* =======================================
+     IMÁGENES EN SECCIONES
+     ======================================= */
+section img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 16px;
+}
+
+/* =======================================
+     TABLAS
+     ======================================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  font-size: var(--font-medium);
+  background-color: var(--color-primary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: var(--color-brown);
+  color: var(--color-primary);
+}
+
+th,
+td {
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-brown);
+}
+
+/* =======================================
+     SECCIÓN: SUSCRIBIRSE
+     ======================================= */
+.suscribirse {
+  margin: 5rem 0;
+  background-color: var(--color-brown);
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.suscribirse h3,
+.suscribirse h4 {
+  font-size: var(--font-large);
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Formulario de suscripción */
+.form {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+/* Inputs del formulario */
+input {
+  border: 3px solid var(--color-primary);
+  padding: 1rem;
+}
+
+.form input[type="email"] {
+  width: 50rem;
+}
+
+::placeholder {
+  color: var(--color-primary);
+}
+
+/* Botón de envío */
+.form input[type="submit"] {
+  width: 10rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--color-primary);
+}
+
+.form input[type="submit"]:hover {
+  background-color: var(--color-primary);
+  color: var(--color-brown);
+}
+
+/* =======================================
+     RESPONSIVE DESIGN
+     Adaptación para dispositivos móviles
+     ======================================= */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 80px 10px 50px 10px;
+  }
+
+  h2 {
+    font-size: var(--font-large);
+  }
+
+  h3 {
+    font-size: var(--font-medium);
+  }
+}
+
+@media (max-width: 440px) {
+
+  header {
+    padding: 40px 10px 25px 10px;
+  }
+
+  header h2 {
+    font-size: var(--font-large);
+  }
+
+  header p {
+    font-size: var(--font-small);
+  }
+
+  p {
+    font-size: var(--font-small);
+  }
+
+  ul li {
+    font-size: var(--font-small);
+  }
+
+  .suscribirse {
+    margin: 3rem 0;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .form {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .form input[type="email"] {
+    width: 100%;
+  }
+
+  .form input[type="submit"] {
+    align-self: center;
+  }
+}
